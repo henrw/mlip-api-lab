@@ -2,14 +2,10 @@ from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from msrest.authentication import CognitiveServicesCredentials
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 import time
-from dotenv import load_dotenv
 import os
 
 endpoint = os.environ.get('ENDPOINT')
 key = os.environ.get('KEY')
-
-# endpoint = "https://lab1-ocr.cognitiveservices.azure.com"
-# key = "865781fa306b4154a67487a921e1e62b"
 
 credentials = CognitiveServicesCredentials(key)
 
